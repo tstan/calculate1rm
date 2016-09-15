@@ -1,0 +1,21 @@
+def round_to_five(value, base=5):
+	return int(value) - int(value) % base
+def find_percentages():
+	x = raw_input('Enter 1RM: ')
+	x = float(x)
+        print('95%: ',round_to_five(x*.95))
+	print('90%: ',round_to_five(x*.90))
+	print('85%: ',round_to_five(x*.85))
+	print('80%: ',round_to_five(x*.80))
+	print('75%: ',round_to_five(x*.75))
+	print('70%: ',round_to_five(x*.70))
+	print('65%: ',round_to_five(x*.65))
+	print('60%: ',round_to_five(x*.60))
+	print('50%: ',round_to_five(x*.50))
+	print('40%: ',round_to_five(x*.40))
+
+
+def main():
+	find_percentages()	
+
+if __name__ == "__main__": main()
